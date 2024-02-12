@@ -37,6 +37,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
 	var parasite = 0;
 	var kungFuPanda = 0;
+	var parasitePercent = 0;
+	var kungFuPandaPercent = 0;
 	
 	function parasiteCount()
 	{
@@ -48,6 +50,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	{
 		kungFuPanda = kungFuPanda + 1;
 		
+	}
+	function calcPaPercent() 
+	{	
+		parasitePercent = (parasite/4)	* 100;
+	}
+
+	function calcKFPPercent() 
+	{	
+		kungFuPandaPercent = (kungFuPanda/4)* 100;
 	}
 	
 	
@@ -198,13 +209,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
     	<div id="content" class="w3-container">
-        <p>Q4: LONG MOVIE OR QUICK WATCH?</p>  
-	
+        <p>BASED ON YOUR CHOICES....</p>  
     	</div>
-	
-	
-  
-    
+
+	<p>Your compatability with the movie Parasite is: </p>
+	  document.write(calculatePaPercent)
+
+	  
+	  
+
+	  
+	    
   </center>
 </div> 
   
